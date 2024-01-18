@@ -1,0 +1,6 @@
+table{
+    border-style: inset;
+}
+th, td{
+    border: 1px double black;
+}
