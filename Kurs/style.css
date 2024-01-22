@@ -1,0 +1,100 @@
+* {
+  margin: 0; /* сброс отступов*/
+  padding: 0;
+  box-sizing: border-box; /* padding входит а ширину/
+                                               высоту блока*/
+}
+
+.item {
+  width: calc(50% - 20px); /* ширина */
+  height: 200px; /* высота*/
+  background: rgb(8, 8, 8); /* цвет*/
+  margin: 10px; /*  внешний оступ*/
+  border-radius: 15px;
+}
+.container {
+  height: 700px;
+  display: flex;
+  justify-content: center; /**/
+  flex-wrap: wrap; /**/
+}
+.item-1 {
+  background-image: url(./Bart.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.item-2 {
+  background-image: url(./Bart.jpg);
+  background-size: contain;
+  background-repeat: unset;
+}
+p {
+  color: aliceblue;
+  text-align: center;
+}
+
+.item-3 {
+  background-image: url(./Bart.jpg);
+  background-size: auto;
+  background-repeat: space;
+}
+.item-4 {
+  background-image: url(./Bart.jpg);
+  background-size: auto;
+  background-repeat: round;
+}
+.item-5 {
+  background-image: url(./Bart.jpg);
+  background-size: auto calc(80%);
+  background-repeat: no-repeat;
+}
+.item-6 {
+  background-image: url(./Bart.jpg);
+  background-size: cover calc(80%);
+  background-repeat: no-repeat;
+}
+.item-7 {
+  background-image: url(./Bart.jpg);
+  background-size: calc(8% - 50px);
+  background-repeat: no-repeat;
+}
+.item-8 {
+  background-image: url(./Bart.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*
+background-size: cover || contain; 
+            cover - на всю ширину блока, масштабирует по высоте
+            contain - на всю высоту блока, масшатбирует по ширине
+
+    background-position: center; 
+        определяет позицию фоновой картинки внутри блока
+
+    background-repeat: no-repeat; 
+        если картинка меньше блока, она автоматически начинает повторяться,
+            данное свойство убирает это поведение
+ 
+ justify-content:center ;        /* выравнивание по горизонтали 
+ align-items: center;            /* выравнивает по вертикали
+}
+  padding: 10px;  - внутрений отступ
+
+  * - селектор для всех стилей
+  margin   -внещний отступ
+  top      -сверху
+  right    -справа
+  botton   -снизу
+  left     -слева
+
+
+   margin: 10px; - со всех сторон
+    margin: 10px 20px;  10px - сверху/снизу, 20px - справа/слева
+    margin: 10px auto 20px; 10px - сверху, auto - справа слева, 20px - снизу
+    margin: 10px 20px 30px 40px; 
+        10px - сверху, 20px - справа, 30px - снизу, 40px - слева
+ 
+ДЗ. Решить 12 уровней flexbox froggy
+    Добавить картинки для 8 блоков
+
+ */
