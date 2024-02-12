@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .bod {
+            /* display:flex;
+    justify-content: center;
+    align-items: center; */
+            background: rgb(251, 251, 251);
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 15px;
+            box-shadow: 1px 1px 35px 1px;
+        }
+
+        .bod header {
+            display: flex;
+            justify-content: end;
+            margin: 10px;
+        }
+
+        h1 {
+            text-align: justify;
+            margin: 25px 15px;
+        }
+
+        input {
+            margin: 3px 15px;
+            border-radius: 10px;
+            height: 35px;
+            width: 360px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid;      
+        }
+        main #button:focus{
+            border-color: rgba(199, 158, 9, 0.785);
+            caret-color: rgba(199, 158, 9, 0.785);
+            transition: none;
+            outline: none;
+        }
+        p{
+            margin: 15px 15px;
+            color: rgb(164, 170, 170);
+            width:360px ;
+        }
+        main{
+   margin: 25px 50px;
+   height: 80%;  
+}
+main form{
+    height: 100px;
+}
+    </style>
+</head>
+<body>
+    <div class="bod">
+        <header>
+            <a href="https://docs.google.com/document/d/1wop3nChoMB674TDUGn-JOlFArrvsc_Ho/edit#heading=h.gjdgxs"><img
+                    src="./Close.png" alt=""></a>
+        </header>
+        <main>
+            <h1>Регистрация</h1>
+            <div class="inp">
+                <!-- <label for="button"></label> -->
+                <input id="button" style="font-size:larger;" type="email" placeholder="E-Mail">
+                <!-- <label for="button"></label> -->
+                <input id="button" style="font-size:larger;" type="password" placeholder="Password">
+            </div>
+            <p>Регистрируясь на сайте, вы соглашаетесь с нашими Правилами и Политикой конфиденциальности
+                и соглашаетесь на информационную рассылку.</p>
+          <form style="" action="https://docs.google.com/document/d/1wop3nChoMB674TDUGn-JOlFArrvsc_Ho/edit#heading=h.gjdgxs" method="post">
+            <input style="font-weight: bolder; height: 50px; font-size:x-large; background-color: rgba(199, 158, 9, 0.785);; border-radius: 50px; border: 0;" type="submit" value="Зарегистрироваться">
+            <input style="font-weight: bolder; height: 50px; font-size:x-large; background-color: rgba(243, 244, 237, 0.785); border-radius: 50px;" type="submit" value="Войти">
+          </form>
+        </main>
+    </div>
+</body>
+</html>
